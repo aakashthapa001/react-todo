@@ -1,7 +1,7 @@
 {
-  "name": "react-timer",
+  "name": "react-todo",
   "version": "1.0.0",
-  "description": "React App for Timer",
+  "description": "React App for Todo",
   "main": "index.js",
   "scripts": {
     "test": "karma start",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chimseryOo001/react-timer.git.git"
+    "url": "git+https://github.com/chimseryOo001/react-todo.git"
   },
   "author": "Aakash Thapa",
   "license": "MIT",
@@ -39,6 +39,7 @@
     "karma-webpack": "^1.8.0",
     "mocha": "^3.2.0",
     "node-sass": "^3.13.0",
+    "node-uuid": "^1.4.7",
     "react-addons-test-utils": "^15.4.1",
     "sass-loader": "^4.0.2",
     "script-loader": "^0.7.0",
@@ -46,7 +47,7 @@
     "webpack": "^1.13.3"
   },
   "bugs": {
-    "url": "https://github.com/chimseryOo001/react-timer.git/issues"
+    "url": "https://github.com/chimseryOo001/react-todo.git/issues"
   },
-  "homepage": "https://github.com/chimseryOo001/react-timer.git#readme"
+  "homepage": "https://github.com/chimseryOo001/react-todo.git#readme"
 }
