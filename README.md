@@ -1,2 +1,2 @@
-# react-boilerplate
-A simple react boilerplate
+# react-todo
+A simple react Todo App

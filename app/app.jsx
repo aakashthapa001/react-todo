@@ -1,6 +1,7 @@
 var React = require('react'),
     ReactDOM = require('react-dom'),
-    {Route, Router, IndexRoute, hashHistory} = require('react-router');
+    {Route, Router, IndexRoute, hashHistory} = require('react-router'),
+    TodoApp = require('TodoApp');
 
 // Load foundation
 $(document).foundation();
@@ -9,6 +10,6 @@ $(document).foundation();
 require('style!css!sass!applicationStyles')
 
 ReactDOM.render(
-  <p>Boilerplate 3 Project</p>
+  <TodoApp/>,
   document.getElementById('app')
 );
