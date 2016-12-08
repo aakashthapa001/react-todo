@@ -40,7 +40,7 @@ describe('TodoAPI', () => {
       expect(actualTodos).toEqual([]);
     });
 
-    if('should return todo if valid array in localStorage', () => {
+    it('should return todo if valid array in localStorage', () => {
       var todos = [{
         id: 23,
         text: 'test all files',
