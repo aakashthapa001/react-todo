@@ -7,6 +7,8 @@ var React = require('react'),
     store = require('configureStore').configure(),
     TodoAPI = require('TodoAPI');
 
+import './../playground/firebase/index';
+
 // subscribe for changes
 store.subscribe(() => {
   var state = store.getState();
