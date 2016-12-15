@@ -50,6 +50,12 @@ export var todosReducer = (state = [], action) => {
           return todo;
         }
       });
+    // add multiple todo as todos
+    case 'ADD_TODOS':
+      return [
+        ...state,
+        ...action.todos
+      ];
     default:
       return state;
   }

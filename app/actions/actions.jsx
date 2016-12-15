@@ -21,6 +21,14 @@ export var addTodo = (text) => {
   };
 };
 
+// add multiple todos i.e. addTodos
+export var addTodos = (todos) => {
+  return {
+    type: 'ADD_TODOS',
+    todos
+  };
+};
+
 // toggleTodo action (id)
 export var toggleTodo = (id) => {
   return {
