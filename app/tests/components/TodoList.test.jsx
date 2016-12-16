@@ -48,7 +48,7 @@ describe('TodoList', () => {
   });
 
   // test to render empty message
-  it('should render empyt message if no todos', () => {
+  it('should render empty message if no todos', () => {
     var todos = [];
     var todoList = TestUtils.renderIntoDocument(<TodoList todos={todos}/>),
         $el = $(ReactDOM.findDOMNode(todoList));

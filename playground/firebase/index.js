@@ -24,28 +24,13 @@ firebaseRef.set({
   }
 });
 
-// firebaseRef.update({
-//   isRunning: false,
-//   'app/name': 'Todo Application'
-// });
-
-// firebaseRef.child('app').update({
-//   name: 'Todo Application'
-// }).then(() => {
-//   console.log('Update worked!');
+// firebaseRef.child('app').once('value').then((snapshot) => {
+//   console.log('Got entire database', snapshot.key, snapshot.val());
 // }, (e) => {
-//   console.log('Update failed!');
+//   console.log('Unable to fetch value', e);
 // });
-
-// firebaseRef.update({
-//   'app/name': 'Todo Application',
-//   'user/name': 'Ajit'
-// });
-
-firebaseRef.child('app').update({
-  name: 'Todo Application'
+firebaseRef.on('value', (snapshot) => {
+  console.log('Got value', snapshot.val());
 });
 
-firebaseRef.child('user').update({
-  name: 'Ajit'
-});
+firebaseRef.update({isRunning: false});
